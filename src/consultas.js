@@ -56,8 +56,7 @@ db.concesionario.find({$and:
     "Dimensiones.Longitud": {$gt:"2.70m"}},
     {TipoVehiculo:{$not:{$eq:"Coche"}}}]}).pretty()
 
-//Consulta concreta: Selecciona los documentos en los que dentro de "EquipoExtra" haya un elemento que empiece por Ret, o que el "Modelo" sea "Astra"
-//y los que tengan "RuedaExtra" y "ChalecoReflectante"
+
 db.concesionario.find({
     $and: [
         { $or: [ { EquipoExtra: { $in: [/^Ret/]} }, { "Modelo":"Astra" } ] },
