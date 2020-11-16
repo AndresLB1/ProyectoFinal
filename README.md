@@ -1,4 +1,4 @@
-#Proyecto Final
+Proyecto Final
 
 -En este proyecto crearemos una nueva colección sobre la que iremos insertando documentos y haremos consultas.
 
